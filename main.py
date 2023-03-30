@@ -16,3 +16,8 @@ def count_words(text):
         else:
             word_count[word] = 1
     return word_count
+
+
+def sort_words(word_count):
+    sorted_words = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
+    return sorted_words[:10]
